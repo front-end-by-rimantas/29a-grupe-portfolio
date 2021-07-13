@@ -1,0 +1,25 @@
+.container {
+  display: grid;
+  grid-template-columns: 15px 1fr 15px;
+  grid-template-areas: '. row .';
+  width: 100%;
+  gap: 40px;
+}
+
+.container > .row {
+  grid-area: row;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: yellow;
+  min-height: 100px;
+  gap: 15px;
+}
+
+.container > .row > .col-12 {
+  grid-column-start: span 12;
+  background-color: violet;
+}
+.container > .row > .col-6 {
+  grid-column-start: span 6;
+  background-color: orange;
+}

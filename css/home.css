@@ -1,6 +1,7 @@
 /* base */
 @import './base/reset.css';
 @import './base/variables.css';
+@import './base/layout.css';
 
 /* 3rd-party */
 
