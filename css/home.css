@@ -27,7 +27,7 @@
 /* ABOUT ME END */
 
 /* HOBBIES START */
-@media (min-width: 860px) {
+@media (min-width: 800px) {
   .container > .row > .title-hobbies {
     grid-column-start: 3;
   }
@@ -38,6 +38,11 @@
 /* ACHIEVEMENTS END */
 
 /* SERVICES START */
+@media (min-width: 800px) {
+  .container > .row > .title-services {
+    grid-column-start: 3;
+  }
+}
 /* SERVICES END */
 
 /* WORK HISTORY START */
@@ -47,12 +52,22 @@
 /* EXPERTISE END */
 
 /* PORTFOLIO START */
+@media (min-width: 800px) {
+  .container > .row > .title-portfolio {
+    grid-column-start: 3;
+  }
+}
 /* PORTFOLIO END */
 
 /* TESTIMONIALS START */
 /* TESTIMONIALS END */
 
 /* BLOG START */
+@media (min-width: 800px) {
+  .container > .row > .title-blog {
+    grid-column-start: 3;
+  }
+}
 /* BLOG END */
 
 /* PROMO START */
