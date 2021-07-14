@@ -27,6 +27,11 @@
 /* ABOUT ME END */
 
 /* HOBBIES START */
+@media (min-width: 860px) {
+  .container > .row > .title-hobbies {
+    grid-column-start: 3;
+  }
+}
 /* HOBBIES END */
 
 /* ACHIEVEMENTS START */
