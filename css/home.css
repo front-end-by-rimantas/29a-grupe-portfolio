@@ -1,6 +1,7 @@
 /* base */
 @import './base/reset.css';
 @import './base/variables.css';
+@import './base/layout.css';
 
 /* 3rd-party */
 
@@ -26,12 +27,22 @@
 /* ABOUT ME END */
 
 /* HOBBIES START */
+@media (min-width: 800px) {
+  .container > .row > .title-hobbies {
+    grid-column-start: 3;
+  }
+}
 /* HOBBIES END */
 
 /* ACHIEVEMENTS START */
 /* ACHIEVEMENTS END */
 
 /* SERVICES START */
+@media (min-width: 800px) {
+  .container > .row > .title-services {
+    grid-column-start: 3;
+  }
+}
 /* SERVICES END */
 
 /* WORK HISTORY START */
@@ -41,19 +52,44 @@
 /* EXPERTISE END */
 
 /* PORTFOLIO START */
+@media (min-width: 800px) {
+  .container > .row > .title-portfolio {
+    grid-column-start: 3;
+  }
+}
 /* PORTFOLIO END */
 
 /* TESTIMONIALS START */
 /* TESTIMONIALS END */
 
 /* BLOG START */
+@media (min-width: 800px) {
+  .container > .row > .title-blog {
+    grid-column-start: 3;
+  }
+}
 /* BLOG END */
 
 /* PROMO START */
+@media (min-width: 1080px) {
+  .container > .row > .promo {
+    grid-column-start: 2;
+  }
+}
+@media (min-width: 1200px) {
+  .container > .row > .promo {
+    grid-column-start: 3;
+  }
+}
 /* PROMO END */
 
 /* CONTACT ME START */
 /* CONTACT ME END */
 
 /* FOOTER START */
+@media (min-width: 800px) {
+  .container > .row > .footer-details {
+    grid-column-start: 3;
+  }
+}
 /* FOOTER END */
