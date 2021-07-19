@@ -24,3 +24,14 @@
   color: #777;
   text-align: center;
 }
+
+.bg-light {
+  background-color: #fff;
+}
+.bg-grey {
+  background-color: #f9fafd;
+}
+.bg-dark {
+  background-color: #3c4858;
+  color: #fff;
+}
