@@ -1,5 +1,8 @@
 // IMPORTS
 
+import { Hobbies } from "./components/hobbies/Hobbies.js";
+import { hobbiesData } from "./data/hobbiesData.js";
+
 
 // CODE EXECUTION
 
@@ -13,6 +16,7 @@
 /* ABOUT ME END */
 
 /* HOBBIES START */
+new Hobbies('#hobbies_block', hobbiesData);
 /* HOBBIES END */
 
 /* ACHIEVEMENTS START */
