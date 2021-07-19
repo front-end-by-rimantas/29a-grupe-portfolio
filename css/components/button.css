@@ -1,0 +1,23 @@
+.btn {
+  display: inline-block;
+  padding: 0.7em 1.2em;
+  font-size: 16px;
+  line-height: 1em;
+  background-color: var(--primary-color);
+  border: var(--primary-border);
+  color: var(--anti-primary-color);
+  border-radius: 0.25em;
+}
+
+.btn.btn-invert {
+  background-color: var(--anti-primary-color);
+  color: var(--primary-color);
+}
+.btn.btn-invert:hover {
+  background-color: var(--primary-color);
+  color: var(--anti-primary-color);
+}
+
+.btn.btn-big {
+  font-size: 22px;
+}
