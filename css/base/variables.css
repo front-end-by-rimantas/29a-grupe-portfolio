@@ -1,0 +1,5 @@
+:root {
+  --primary-color: #e54b4b;
+  --anti-primary-color: #fff;
+  --primary-border: 1px solid var(--primary-color);
+}
