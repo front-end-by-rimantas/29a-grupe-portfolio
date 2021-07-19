@@ -3,10 +3,22 @@
   padding: 0.7em 1.2em;
   font-size: 16px;
   line-height: 1em;
+  text-align: center;
+  text-decoration: none;
   background-color: var(--primary-color);
   border: var(--primary-border);
   color: var(--anti-primary-color);
   border-radius: 0.25em;
+  opacity: 0.8;
+  transition: opacity 0.6s;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 1;
+}
+.btn > .fa {
+  margin-left: 0.3em;
+  line-height: inherit;
 }
 
 .btn.btn-invert {
@@ -20,4 +32,11 @@
 
 .btn.btn-big {
   font-size: 22px;
+}
+
+.btn.btn-icon {
+  padding: 0;
+  width: 2em;
+  height: 2em;
+  line-height: 1.9em;
 }

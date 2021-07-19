@@ -5,6 +5,7 @@
 @import './base/base.css';
 
 /* 3rd-party */
+@import './3rd-party/font-awesome.min.css';
 
 /* components */
 @import './components/button.css';
