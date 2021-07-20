@@ -1,0 +1,28 @@
+.hobbie {
+  display: flex;
+  background-color: #eee;
+  line-height: 60px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+.hobbie:hover {
+  background-color: #fff;
+  box-shadow: 0 4px 20px #0002;
+  transform: translateY(-5px);
+}
+.hobbie > .icon {
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  font-size: 25px;
+  line-height: inherit;
+  border-right: 1px solid #ddd;
+  transition: color 0.3s;
+}
+.hobbie:hover > .icon {
+  color: var(--primary-color);
+}
+.hobbie > .title {
+  padding: 0 20px;
+  font-size: 18px;
+}
