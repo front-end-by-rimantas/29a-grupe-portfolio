@@ -3,6 +3,25 @@
   flex-direction: column;
   gap: 40px;
 }
+.gallery > .filter {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.gallery > .filter > .tag {
+  padding: 5px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  transition: all 0.6s;
+  cursor: pointer;
+}
+.gallery > .filter > .tag:hover,
+.gallery > .filter > .tag.active {
+  background-color: var(--primary-color);
+  color: var(--anti-primary-color);
+}
 .gallery > .content {
   display: grid;
   width: 100%;
