@@ -6,7 +6,7 @@ class Gallery {
         this.DOM = null;
         this.renderingStrategiesOptions = ['first', 'last', 'mostViews', 'leastViews', 'random'];
         this.renderingStrategy = this.renderingStrategiesOptions[0];
-        this.maxItems = 3;
+        this.maxItems = 6;
 
         this.init();
     }
@@ -75,7 +75,35 @@ class Gallery {
     }
 
     render() {
-        console.log(this.data);
+        const HTML = `<div class="filter">
+                        <div class="tag active">All</div>
+                        <div class="tag">Dog</div>
+                        <div class="tag">Cat</div>
+                        <div class="tag">Hamster</div>
+                    </div>
+                    <div class="content">${this.generateContentHTML()}</div>`;
+
+        this.DOM.innerHTML = HTML;
+    }
+
+    generateContentHTML() {
+        let HTML = '';
+        let count = 0;
+
+        for (const item of this.data.list) {
+            // item.isValid()
+            if (!true) {
+                continue;
+            }
+            HTML += `<div class="item">Item 1</div>`;
+            ++count;
+
+            if (count === this.maxItems) {
+                break;
+            }
+        }
+
+        return HTML;
     }
 }
 
