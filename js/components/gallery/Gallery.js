@@ -37,7 +37,7 @@ class Gallery {
             return false;
         }
 
-        const { imgPath: path, list, maxItems: max, renderingStrategy: start } = this.data;
+        const { imgPath: path, list, maxItems: max, renderingStrategy: strat } = this.data;
 
         // imgPath
         if (typeof path !== 'string' ||
