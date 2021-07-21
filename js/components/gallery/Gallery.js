@@ -62,7 +62,7 @@ class Gallery {
         // renderStrategy update
         if (typeof strat === 'string' &&
             strat !== '' &&
-            this.renderingStrategiesOptions.includes(start)) {
+            this.renderingStrategiesOptions.includes(strat)) {
             this.renderingStrategy = strat;
         }
 
