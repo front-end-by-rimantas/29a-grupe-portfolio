@@ -1,6 +1,6 @@
 const portfolioData = {
-    maxItems: 2,
-    renderStrategy: 'first',
+    maxItems: 9,
+    renderStrategy: 'random',
     imgPath: './img/portfolio/',
     list: [
         {

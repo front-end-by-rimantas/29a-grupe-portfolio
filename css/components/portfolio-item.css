@@ -1,0 +1,69 @@
+.portfolio-item {
+  width: 100%;
+}
+.portfolio-item > .image {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-item > .image > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+}
+.portfolio-item:hover > .image > img {
+  transform: translate(-50%, -50%) rotate(3deg) scale(1.1);
+}
+.portfolio-item > .image > .overlay {
+  background-color: #0000;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: all 0.5s;
+}
+.portfolio-item:hover > .image > .overlay {
+  background-color: #0008;
+}
+.portfolio-item .overlay > .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.portfolio-item:hover .overlay > .icon {
+  top: 45%;
+  opacity: 1;
+}
+.portfolio-item .overlay > .icon:hover {
+  color: var(--primary-color);
+  background-color: #fff;
+}
+.portfolio-item > .texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 20px;
+}
+.portfolio-item > .texts > .title {
+  font-size: 22px;
+}
+.portfolio-item > .texts > .main-tag {
+  font-size: 15px;
+}
